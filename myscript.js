@@ -8,12 +8,21 @@
 
 // 👇 هنا function عرف الدالة او
 
+function driving(age) {
+  if (age >= 18) {
+    console.log(` 🚘😍 مبروك سوف تحصل على الليسن
+`);
+  } else {
+    console.log(`😢 للاسف عمرك لا يسمح`);
+  }
+}
 
 
+
+driving(17)
+driving(19)
 // لا تنسى أن تنادي الدالة
-
-
-
+function driving()
 // ------------------------------ 2️⃣ السؤال الثاني ------------------------------
 // 2️⃣ السؤال الثاني
 //     - iceCream واجعل اسمها array عرف مصفوفة او
@@ -22,9 +31,11 @@
 
 // 👇 هنا array عرف المصفوفة او
 
+let icecream = ["chocolate", "oreo", "vanilla", "strawberry"];
 
-
-
+for (let flavors of icecream) {
+  console.log(flavors);
+}
 
 // --------------------------------- ✨ بونص ------------------------------------
 // بحيث عند مناداة الدالة تطبع القائمة myIceCream بإسم function عرف دالة او
@@ -32,3 +43,26 @@
 
 // --------------------------------- 🔥 بونص ------------------------------------
 // while loop اطبع احد المصفوفات بإستخدام
+
+let flavors = [
+  { name: "chocolate" },
+  { name: "oreo" },
+  { name: "vanilla" },
+  { name: "strawberry" },
+];
+
+function myIceCream(flavors) {
+  console.log(`${flavors.name} is my favorite flavor`);
+}
+
+let movies = ["spider man", "sonic", "the grinch"];
+
+function favorite() {
+  let counter = 0;
+
+  while (counter < 10) {
+    counter = counter + 1;
+
+    console.log("my favorite movies" + counter);
+  }
+}
